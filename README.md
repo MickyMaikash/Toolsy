@@ -7,6 +7,12 @@ Explore the live version of Toolsy:
 
 ➡️ [Open Toolsy](https://mickymaikash.github.io/Toolsy/)
 
+## 🚀 Live Demo
+
+Explore the live version of Toolsy:
+
+➡️ [Open Toolsy](https://mickymaikash.github.io/Toolsy/)
+
 ## About This Project
 
 Toolsy is a collection of lightweight file utilities built with HTML, CSS, and JavaScript. It allows users to perform common image and PDF tasks without installing additional software.
@@ -35,8 +41,8 @@ The project focuses on simplicity, speed, and privacy by processing files direct
 .
 ├── index.html          # Main application page
 ├── script.js           # Main JavaScript logic
-├── style.css           # Global styling
-├── sharedFiles/        # Shared UI components
+├── style.css           # Main CSS styling
+├── sharedFiles/        # Shared UI components like header footer about and global css
 └── tools/              # Individual tool pages and assets
 ```
 
