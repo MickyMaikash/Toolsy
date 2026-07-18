@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="StyleSheet" href="./pdfWaterMark.css">
+    <link rel="StyleSheet" href="../../sharedFiles/global.css">
+</head>
+<body>
+    <header></header>
+    <section class="hero" data-title="PDF Watermark" data-description="Add text watermark to PDFs"=""></section>
+ <!-- upload section-->
+    <section class="UploadSection">
+        <img class="upload-icon" src="../../assets/pdf.svg">
+        <h3>Upload your pdf</h3>
+        <p>Click or Drag and drop your image here</p>
+        <input style="display: none;" type="file" accept="application/pdf" id="ImageInput">
+    </section>
+
+
+  <main class="hidden ScreenAfterSelection">
+
+    <div class=" SizeInputContainer">
+        <div class="textHeading">Enter Text You Want to add as a WaterMark:</div>
+        <input  class="textHeading" type="text"  id="sizeInput">
+    </div> 
+        </div>
+     
+    
+    </section>
+        <div class="conatiner">
+
+              <!--info Screen-->
+        <section class="infoSection">
+            <div class="name"></div>
+            <div class="type"></div>
+            <div class="size"></div>
+        </section>
+    <!--watermark Button-->
+        <section class="resultPreview">
+            <button id="ImageExtCHangeBtn">Add WaterMark </button>
+            <div class="hidden progressScreen">
+                <p class="textHeading">Please Wait While we add WaterMark</p>
+                <progress></progress>
+            </div>
+        </section>
+    <!--Button-->
+
+    <section class="hidden lastSection">
+        <p class="text">WaterMark Added Succeffully</p>
+        <button id="DownloadBtn">Download pdf</button>
+
+    </section>
+        </div>
+  
+     
+
+    </main>
+
+
+    
+    <footer></footer>
+
+    <script src="../../sharedFiles/header.js"></script>
+    <script src="../../sharedFiles/hero.js"></script>
+    <script src="../../sharedFiles/footer.js"></script>
+    <script src="../../sharedFiles/global.js"></script>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="./pdfWaterMark.js"></script>
+</body>
+</html>

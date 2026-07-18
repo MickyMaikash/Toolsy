@@ -1,7 +1,7 @@
 let UploadSection=document.querySelector(".UploadSection")
 let imageInput=document.getElementById('ImageInput')
 let previewImg=document.querySelector('.previewImae');
-let sizeInput =document.querySelector('.sizeInput')
+let sizeInput =document.querySelector('#sizeInput')
 let changeImgBtn=document.querySelector('.ChangeImage');
 let ImageExtChangeBtn=document.querySelector('#ImageExtCHangeBtn')
 let downloadBtn=document.querySelector('#DownloadBtn')
