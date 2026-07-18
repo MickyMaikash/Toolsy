@@ -92,6 +92,7 @@ nav a{
 }
 
 
+
 .mainTitle{
     padding: 0 20px;
     font-weight: 800;
@@ -360,4 +361,26 @@ nav a{
 
 }
 
+@media (max-width: 600px) {
 
+    header {
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin: 5px 8px;
+        font-size: 1rem;
+    }
+}
