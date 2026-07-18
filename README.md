@@ -1,6 +1,11 @@
 # Toolsy
 
 A simple browser-based toolkit for working with images and PDF files directly in your browser.
+## 🚀 Live Demo
+
+Explore the live version of Toolsy:
+
+➡️ [Open Toolsy](https://mickymaikash.github.io/Toolsy/)
 
 ## About This Project
 

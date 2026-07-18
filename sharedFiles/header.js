@@ -4,7 +4,7 @@ navBar.innerHTML=` <h1>Toolsy</h1>
             <a id="darkModeToggle" href="#">🌙 / ☀️</a>
             <a id="toolsLink" href="#">Tools</a>
             <a id="about" href="#">About</a>  
-            <a href="#" target="_blank">GitHub</a>
+            <a href="https://github.com/MickyMaikash/Toolsy" target="_blank">GitHub</a>
         </nav>`
 
 
