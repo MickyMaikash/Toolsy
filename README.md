@@ -1,34 +1,67 @@
-# File Tools Web App
+# Toolsy
 
-A simple web-based toolkit for working with images and PDF files directly in the browser.
+A simple browser-based toolkit for working with images and PDF files directly in your browser.
 
 ## About This Project
 
-This project is a collection of useful file tools built with HTML, CSS, and JavaScript. It is designed for users who want to perform common file tasks without installing heavy software.
+Toolsy is a collection of lightweight file utilities built with HTML, CSS, and JavaScript. It allows users to perform common image and PDF tasks without installing additional software.
 
-## What It Includes
+The project focuses on simplicity, speed, and privacy by processing files directly in the browser without requiring a backend server.
 
-- Image resizing
-- Image format conversion
-- Image compression
-- PDF merging
-- PDF splitting
-- PDF watermarking
+## Features
+
+- 🖼 Image Resizing
+- 🔄 Image Format Conversion
+- 📦 Image Compression
+- 📄 PDF Merging
+- ✂️ PDF Splitting
+- 💧 PDF Watermarking
 
 ## Technologies Used
 
-- HTML, CSS, and JavaScript for the interface
-- PDF.js for working with PDF files in the browser
-- pdf-lib for creating and editing PDF documents
+- HTML5, CSS3, and JavaScript for the user interface
+- PDF.js for reading and rendering PDF files
+- PDF-LIB for creating and editing PDF documents
+- Browser APIs for client-side file processing
 
 ## Project Structure
 
-- [index.html](index.html) — main landing page
-- [script.js](script.js) — navigation and tool actions
-- [style.css](style.css) — overall styling
-- [sharedFiles](sharedFiles) — shared UI components
-- [tools](tools) — individual tool pages and assets
+```text
+.
+├── index.html          # Main application page
+├── script.js           # Main JavaScript logic
+├── style.css           # Global styling
+├── sharedFiles/        # Shared UI components
+└── tools/              # Individual tool pages and assets
+```
+
+## How It Works
+
+Toolsy uses modern browser technologies to process files locally.
+
+When a user selects an image or PDF, the file is handled directly inside the browser using JavaScript and related libraries. No file uploads or backend servers are required.
+
+## Privacy
+
+🔒 Files are processed locally in your browser.
+
+No uploads. No backend.
+
+Your files stay on your device while you use the tools.
 
 ## Purpose
 
-The goal of this project is to provide a lightweight and easy-to-use set of tools for everyday file handling tasks, especially for image and PDF processing.
+The goal of Toolsy is to provide simple, fast, and privacy-friendly tools for everyday file handling tasks.
+
+This project also demonstrates how powerful modern frontend technologies can be when building useful applications without relying on a backend.
+
+## Future Improvements
+
+- More image and PDF tools
+- Improved mobile experience
+- Additional file format support
+- More customization options
+
+## License
+
+This project is open-source and available under the MIT License.
