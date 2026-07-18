@@ -1,0 +1,357 @@
+:root{
+    --texts-color:#fff;
+    --text-bg-color:#000;
+    --upload-section-bg-color:#ff00ff;
+    --shadow:#fff;
+    --primary-color:#000;
+    --box-hover-bg:#2cc3ff;
+    --card-bg:#123;
+
+    --pdfviewr-bg-color:rgba(0,0,0,0.6);
+}
+
+.dark{
+    --texts-color:#000;
+    --text-bg-color:#fff;
+    --upload-section-bg-color:#ffff00;
+    --shadow:#000;
+    --primary-color:#fff;
+    --box-hover-bg:#2cc3ff;
+    --card-bg:rgb(49, 237, 49);
+     --pdfviewr-bg-color:rgba(0,0,0,0.6);
+}
+
+.uploadSection{
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px 25px;
+    background: var(--upload-section-bg-color);
+    border: 2px dashed var(--text-bg-color);
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: 0.3s ease;
+}
+
+.uploadSection:hover {
+    background-color: var(--box-hover-bg);
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.uploadSection div{
+    font-size: 32px;
+}
+
+
+
+.PdfContainer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(300px, 1fr)
+    );
+    gap: 20px;
+    justify-content: center;
+}
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px var(--shadow);
+    transition: transform 0.2s ease;
+    cursor: grab;
+}
+
+.mainContainer:hover {
+    transform: translateY(-5px);
+}
+
+.mainContainer:active {
+    cursor: grabbing;
+}
+
+.mainContainer > img:first-child {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+
+}
+
+.mainContainer div {
+    flex: 1;
+    overflow: hidden;
+
+}
+
+.mainContainer h3 {
+    margin: 0;
+    color: var(--texts-color);
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.mainContainer p {
+    color: var(--texts-color);
+    margin: 5px 0 0;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.viewImg,
+.closeBtn {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.viewImg:hover,
+.closeBtn:hover {
+    transform: scale(1.15);
+}
+
+.closeBtn:hover {
+    filter: brightness(0.8);
+}
+.dragging {
+    opacity: 0.5;
+    border: 2px dashed var(--primary-color);
+}
+
+
+.MergeSection{
+    display: flex;
+    justify-content: center;
+}
+.mergeButton {
+    align-self: center;
+    margin-top: 30px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--text-bg-color);
+    color: var(--texts-color);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.mergeButton:hover {
+    opacity: 0.85;
+}
+
+#downloadBtn {
+    display: block;
+    margin: 20px auto;
+
+    padding: 12px 28px;
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+
+    transition: all 0.2s ease;
+}
+
+#downloadBtn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+#downloadBtn:active {
+    transform: translateY(0);
+}
+.hidden{
+    display: none !important;
+}
+
+.pdfModal {
+    position: fixed;
+    inset: 0;
+    background: var(--pdfviewr-bg-color);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.pdfModal.show {
+    display: flex;
+}
+
+.pdfViewerBox {
+    width: 90%;
+    height: 90%;
+
+    background: var(--primary-color);
+    border-radius: 15px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#pdfViewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#closeViewer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    z-index: 2;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #ef4444;
+    color: white;
+
+    cursor: pointer;
+}
+
+.guide {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+@media(max-width:600px){
+
+    body{
+        padding:15px;
+    }
+
+    .uploadSection{
+        height:170px;
+        font-size:18px;
+    }
+
+    .PdfContainer{
+        grid-template-columns:1fr;
+    }
+
+
+    .mainContainer{
+        padding:12px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .pdfViewerBox {
+        width: 95%;
+        height: 90%;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+
+    #closeViewer {
+        width: 32px;
+        height: 32px;
+
+        top: 8px;
+        right: 8px;
+
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .pdfViewerBox {
+        width: 100%;
+        height: 100%;
+
+        border-radius: 0;
+    }
+
+
+    #pdfViewer {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .guide {
+        width: 85%;
+        padding: 20px;
+
+        border-radius: 12px;
+    }
+
+    .guide h2 {
+        font-size: 20px;
+    }
+
+    .guide li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .guide {
+        width: 90%;
+
+        padding: 18px;
+
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+
+    .guide h2 {
+        font-size: 18px;
+    }
+
+
+    .guide ol {
+        padding-left: 20px;
+    }
+
+}
+
+

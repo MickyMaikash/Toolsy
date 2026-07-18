@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="StyleSheet" href="mergepdf.css" >
+    <link rel="StyleSheet" href="../../sharedFiles/global.css">
+</head>
+<body>
+    <header></header>
+    <section data-title="Merge Pdf" data-description="Combine multiple PDF files into a single document quickly and easily."   class="hero"></section>
+
+<section class="guide" id="guide">
+
+    <button class="closeGuide">
+        ✕
+    </button>
+
+    <h2>How to Merge PDF?</h2>
+
+    <ol>
+        <li>Upload your PDF files</li>
+        <li>Drag and drop files to arrange order</li>
+        <li>Preview or remove files if needed</li>
+        <li>Click Merge PDF</li>
+        <li>Download your merged file</li>
+    </ol>
+
+</section>
+
+
+
+    <section class="uploadSection">
+<div>📄 Upload PDF files  or drag and drop them here</div>
+        <input class="hidden" type="file" id="PdfInput"  accept="application/pdf" multiple>
+</section>
+
+    <section class="PdfContainer">
+        
+    </section>
+
+    <section class="hidden MergeSection">
+        <button class="mergeButton">
+            Merge Pdf
+        </button>
+        <progress class="hidden" id="mergeProgress"></progress>
+    </section>
+  <button class="hidden" id="downloadBtn" >
+    Download PDF
+</button>
+
+
+
+<section class="pdfModal" id="pdfModal">
+
+    <section class="pdfViewerBox">
+
+        <button id="closeViewer">
+            ✕
+        </button>
+
+        <iframe id="pdfViewer"></iframe>
+
+    </section>
+
+</section>
+
+
+
+
+    <footer></footer>
+
+    <script src="../../sharedFiles/header.js"></script>
+    <script src="../../sharedFiles/hero.js"></script>
+    <script src="../../sharedFiles/footer.js"></script>
+    <script src="../../sharedFiles/global.js"></script>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="./mergepdf.js"></script>
+</body>
+</html>

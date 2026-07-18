@@ -14,7 +14,7 @@ window.location.href = "./tools/image_converter/imageCoverter.html";
     }else if(title==="Image Compressor"){
 window.location.href = "./tools/image_compressor/imageCompressor.html";
     }else if(title==="Merge PDF"){
-        console.log("Merge PDF clicked");
+        window.location.href = "./tools/MergePdf/mergepdf.html";
     }else if(title==="Split PDF"){
       console.log("Split PDF clicked");
     }else if(title==="PDF Watermark"){
