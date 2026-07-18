@@ -53,15 +53,7 @@ Your files stay on your device while you use the tools.
 
 The goal of Toolsy is to provide simple, fast, and privacy-friendly tools for everyday file handling tasks.
 
-This project also demonstrates how powerful modern frontend technologies can be when building useful applications without relying on a backend.
 
-## Future Improvements
 
-- More image and PDF tools
-- Improved mobile experience
-- Additional file format support
-- More customization options
 
-## License
 
-This project is open-source and available under the MIT License.
