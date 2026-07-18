@@ -30,8 +30,8 @@ The project focuses on simplicity, speed, and privacy by processing files direct
 .
 ├── index.html          # Main application page
 ├── script.js           # Main JavaScript logic
-├── style.css           # Global styling
-├── sharedFiles/        # Shared UI components
+├── style.css           # Main CSS styling
+├── sharedFiles/        # Shared UI components like header footer about and global css
 └── tools/              # Individual tool pages and assets
 ```
 
