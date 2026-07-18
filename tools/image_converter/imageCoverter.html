@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="StyleSheet" href="../../sharedFiles/global.css">
+    <link rel="StyleSheet" href="./imageCoverter.css">
+<body>
+    <header></header>
+    <section data-title="Image Coverter" data-description="Convert Image to different extension Easily" class="hero"></section>
+
+    <section class="imageConvertorOptions">
+        <button data-initialtype="jpeg" data-finaltype="png">JPG → PNG</button>
+        <button data-initialtype="jpeg" data-finaltype="webp">JPG → WebP</button>
+        <button data-initialtype="webp"data-finaltype="jpeg">WebP → JPG </button>
+        <button data-initialtype="png" data-finaltype="jpeg">PNG → JPG</button>
+        <button data-initialtype="png" data-finaltype="webp">PNG → WebP</button>
+        <button data-initialtype="png" data-finaltype="ico">png to ico</button>
+        <button data-initialtype="webp"data-finaltype="png">WebP → PNG</button>
+        <button data-initialtype="svg" data-finaltype="png">SVG → PNG</button>
+        <button data-initialtype="svg" data-finaltype="jpeg">SVG → JPG</button>
+        <button data-initialtype="svg" data-finaltype="webp">SVG → WebP</button>
+        <button data-initialtype="png" data-finaltype="svg">PNG → SVG</button>
+        <button data-initialtype="jpeg" data-finaltype="svg">JPG → SVG</button>
+        <button data-initialtype="webp" data-finaltype="svg">WebP → SVG</button>
+        <button data-initialtype="bmp" data-finaltype="svg">BMP → SVG</button>
+    </section>
+
+              <!-- upload section-->
+    <section class="hidden UploadSection">
+        <img class="upload-icon" src="../../assets/image.svg">
+        <h3>Upload your Image</h3>
+        <p>Click or Drag and drop your image here</p>
+        <input style="display: none;" type="file" accept="image/*" id="ImageInput">
+    </section>
+
+      <main class="hidden ScreenAfterSelection">
+
+ <!--preview Section-->
+    <section class="imagePreviewSection">
+        <img width="400px" class="previewImae">
+        <button class="ChangeImage">Change Image</button>
+        </section>
+
+
+        <div class="conatiner">
+       
+
+
+    <!--Resize Button-->
+        <section class="resultPreview">
+            <button id="ImageExtCHangeBtn">Convert to </button>
+            <div class="hidden progressScreen">
+                <p class="textHeading">Please Wait While We Resize Your Image</p>
+                <progress></progress>
+            </div>
+        </section>
+    <!--Button-->
+
+    <section class="hidden lastSection">
+        <p class="text">Image Converted Successfully</p>
+        <button id="DownloadBtn">Download</button>
+
+    </section>
+        </div>
+  
+     
+
+    </main>
+
+
+
+    <footer></footer>
+    
+
+     <script src="../../sharedFiles/header.js"></script>
+    <script src="../../sharedFiles/hero.js"></script>
+    <script src="../../sharedFiles/footer.js"></script>
+    <script src="../../sharedFiles/global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/imagetracerjs@1.2.6/imagetracer_v1.2.6.js"></script>
+    <script src="./imageConvertor.js" type="module"></script>
+</body>
+</html>

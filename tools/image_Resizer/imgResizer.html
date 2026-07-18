@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./imageStyle.css">
+    <link rel="stylesheet" href="../../sharedFiles/global.css">
+</head>
+<body>
+        <header></header>
+    <section data-title="Image Resizer" data-description="Resize your images in your browser Quickly." class="hero">
+    </section>
+
+    
+        
+    <!-- upload section-->
+    <section class="UploadSection">
+        <img class="upload-icon" src="../../assets/image.svg">
+        <h3>Upload your Image</h3>
+        <p>Click or Drag and drop your image here</p>
+        <input style="display: none;" type="file" accept="image/*" id="ImageInput">
+    </section>
+
+    <main class="hidden ScreenAfterSelection">
+ <!--preview Section-->
+    <section class="imagePreviewSection">
+        <img width="400px" class="previewImae">
+        <button class="ChangeImage">Change Image</button>
+        </section>
+
+
+        <div class="conatiner">
+  <!--info Screen-->
+        <section class="infoSection">
+            <div class="name"></div>
+            <div class="type"></div>
+            <div class="size"></div>
+            <div class="dimension"></div>
+        </section>
+
+    <!--choose width and height screen-->
+        <div class="textHeading">Enter Width and Height of Image You Want</div>
+    <section class="chooseWidhtHeight">
+        <div class="width">
+            <span>Width In px:</span>
+            <input min="0" type="number" id="widhtInput">
+        </div>
+        <div class="height">
+             <span>Height in px:</span>
+            <input min="0" type="number" id="HeightInput">
+        </div>
+    </section>
+
+
+    <!--Resize Button-->
+        <section class="resultPreview">
+            <button id="ResizeBtn">Resize</button>
+            <div class="hidden progressScreen">
+                <p class="textHeading">Please Wait While We Resize Your Image</p>
+                <progress></progress>
+            </div>
+        </section>
+    <!--Button-->
+
+    <section class="hidden lastSection">
+        <p class="text">Image Resized Successfully</p>
+        <button id="DownloadBtn">Download</button>
+
+    </section>
+        </div>
+  
+     
+
+    </main>
+   
+
+    
+
+
+
+
+
+
+
+
+
+        <footer></footer>
+
+
+    <script src="../../sharedFiles/header.js"></script>
+    <script src="../../sharedFiles/hero.js"></script>
+    <script src="../../sharedFiles/footer.js"></script>
+    <script src="../../sharedFiles/global.js"></script>
+    <script src="./ImageScript.js" type="module"></script>
+</body>
+</html>>

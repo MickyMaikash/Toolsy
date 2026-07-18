@@ -1,0 +1,101 @@
+:root{
+
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+  
+    --hero-mainTitle-color: #1e293b;
+    --hero-description-color: #64748b;
+
+    --header-bg-color: #7c3aed;
+    --nav-link-color: #ffffff;
+    --header-mainTitle-color: #ffffff;
+    --header-bottom-border-color: #7c3aed;
+
+    --footer-bg-color: #7c3aed;
+    --footer-text-color: #ffffff;
+    --footer-bg-color: #7c3aed;
+    --footer-text-color: #000000;
+}
+
+/* DARK THEME */
+.dark{
+    --bg-color: #0f172a;
+    --text-color: #f8fafc;
+
+
+    --hero-mainTitle-color: #ffffff;
+    --hero-description-color: #94a3b8;
+
+    --header-bg-color: #080f1f;
+    --nav-link-color: #e2e8f0;
+    --header-mainTitle-color: #ffffff;
+    --header-bottom-border-color: #7c3aed;
+
+
+    --footer-bg-color: #020617;
+    --footer-text-color: #cbd5e1;
+    --footer-bg-color: #000;
+    --footer-text-color: #ffffff;
+
+}
+
+body{
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 0 30px;
+    color: var(--text-color);
+    background-color: var(--header-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 px;
+    border-bottom: 2px solid var(--header-bottom-border-color);
+}
+
+header h1{
+    font-size: 2rem;
+    color: var(--header-mainTitle-color);
+}
+
+nav a{
+    text-decoration: none;
+   line-height: 1.5;
+    color: var(--nav-link-color);
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+
+.mainTitle{
+    padding: 0 20px;
+    font-weight: 800;
+    font-size: 4rem;
+    color: var(--hero-mainTitle-color);
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+.description{
+    color: var(--hero-description-color);
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+    footer{
+        background-color: var(--footer-bg-color);
+        color: var(--footer-text-color);
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer p{
+        text-align: center;
+        font-size: 1.2em;
+        margin: 0;
+    }
