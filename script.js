@@ -12,7 +12,7 @@ toolButtons.forEach(button=>{
     }else if(title==="Image Converter"){
 window.location.href = "./tools/image_converter/imageCoverter.html";
     }else if(title==="Image Compressor"){
-       console.log("Image Compressor clicked");
+window.location.href = "./tools/image_compressor/imageCompressor.html";
     }else if(title==="Merge PDF"){
         console.log("Merge PDF clicked");
     }else if(title==="Split PDF"){

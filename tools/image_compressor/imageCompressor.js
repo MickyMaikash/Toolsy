@@ -34,6 +34,7 @@ UploadSection.addEventListener('click',()=>{
 
 changeImgBtn.addEventListener('click',()=>{
     mainLayout.classList.add('hidden')
+    ImageExtChangeBtn.remove("hidden")
       progressscren.classList.add('hidden');
         lastdownSection.classList.add('hidden');
         beforAfterPreview.classList.add('hidden')
@@ -121,6 +122,10 @@ async function compressImage(){
         lastdownSection.classList.remove('hidden');
         beforAfterPreview.classList.remove('hidden')
     }else{
+        alert("Not able to compress your image to your required size")
+         progressscren.classList.add('hidden');
+        lastdownSection.classList.add('hidden');
+        beforAfterPreview.classList.add('hidden')
         console.log("not able to convert it ")
     }
     
