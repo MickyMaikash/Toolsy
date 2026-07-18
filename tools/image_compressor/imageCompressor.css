@@ -10,6 +10,76 @@
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     --input-bg: #ffffff;
     --success-color: #16a34a;
+}
+
+.dark {
+    --bg-color: #111827;
+    --card-color: #1f2937;
+    --text-color: #f9fafb;
+    --secondary-text: #9ca3af;
+    --border-color: #374151;
+    --primary-color: #3b82f6;
+    --primary-hover: #60a5fa;
+    --shadow: 0 10px 30px rgba(0,0,0,0.4);
+    --input-bg: #111827;
+    --success-color: #22c55e;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s ease;
+}
+
+
+.UploadSection {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px 25px;
+    background: var(--card-color);
+    border: 2px dashed var(--border-color);
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: 0.3s ease;
+}
+
+
+.UploadSection:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+
+.upload-icon {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+
+.UploadSection h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+
+.UploadSection p {
+    color: var(--secondary-text);
+}
+
+:root {
+    --bg-color: #f7f9fc;
+    --card-color: #ffffff;
+    --text-color: #1f2937;
+    --secondary-text: #6b7280;
+    --border-color: #d1d5db;
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --input-bg: #ffffff;
+    --success-color: #16a34a;
     --options_button_color:#04245b;
 }
 
@@ -30,7 +100,6 @@
 body {
     background: var(--bg-color);
     color: var(--text-color);
-
     transition: 0.3s ease;
 }
 
@@ -202,6 +271,21 @@ progress {
 
 }
 
+
+.infoSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+
+.infoSection div {
+    padding: 15px;
+    border-radius: 12px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+}
 @media(max-width:600px){
 
     .conatiner{

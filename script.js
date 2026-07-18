@@ -10,7 +10,7 @@ toolButtons.forEach(button=>{
     if(title==="Image Resizer"){
       window.location.href = "./tools/image_Resizer/imgResizer.html";
     }else if(title==="Image Converter"){
-      console.log("Image Converter clicked");
+window.location.href = "./tools/image_converter/imageCoverter.html";
     }else if(title==="Image Compressor"){
        console.log("Image Compressor clicked");
     }else if(title==="Merge PDF"){

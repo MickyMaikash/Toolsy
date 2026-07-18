@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./imageStyle.css">
-    <link rel="stylesheet" href="../../sharedFiles/global.css">
+    <link rel="StyleSheet" href="./imageCompressor.css">
+    <link rel="StyleSheet" href="../../sharedFiles/global.css">
 </head>
 <body>
-        <header></header>
-    <section data-title="Image Resizer" data-description="Resize your images in your browser Quickly." class="hero">
-    </section>
+     <header></header>
+    <section data-title="Image Compressor" data-description="Compress jpg , jpeg and webp Images Without Losing Quality" class="hero"></section>
 
-    
-        
-    <!-- upload section-->
+  <!-- upload section-->
     <section class="UploadSection">
         <img class="upload-icon" src="../../assets/image.svg">
         <h3>Upload your Image</h3>
@@ -22,48 +19,46 @@
         <input style="display: none;" type="file" accept="image/*" id="ImageInput">
     </section>
 
-    <main class="hidden ScreenAfterSelection">
+
+  <main class="hidden ScreenAfterSelection">
+
+    <div class=" hidden beforAfterPreview">
+        <button id="beforCompression">Before Compression</button>
+        <button id="afterCompression">After Compression</button>
+    </div>
  <!--preview Section-->
     <section class="imagePreviewSection">
         <img width="400px" class="previewImae">
-        <button class="ChangeImage">Change Image</button>
-        </section>
-
-
+        <div>
+                 <button class="ChangeImage">Change Image</button>
+    <div class=" SizeInputContainer">
+        <div style="font-size: 23px;font-style: bold;">Enter Required Size in Kb:</div>
+        <input type="number" min="0" id="sizeInput">
+    </div> 
+        </div>
+     
+    
+    </section>
         <div class="conatiner">
-  <!--info Screen-->
+
+              <!--info Screen-->
         <section class="infoSection">
             <div class="name"></div>
             <div class="type"></div>
             <div class="size"></div>
         </section>
-
-    <!--choose width and height screen-->
-        <div class="textHeading">Enter Width and Height of Image You Want</div>
-    <section class="chooseWidhtHeight">
-        <div class="width">
-            <span>Width In px:</span>
-            <input min="0" type="number" id="widhtInput">
-        </div>
-        <div class="height">
-             <span>Height in px:</span>
-            <input min="0" type="number" id="HeightInput">
-        </div>
-    </section>
-
-
     <!--Resize Button-->
         <section class="resultPreview">
-            <button id="ResizeBtn">Resize</button>
+            <button id="ImageExtCHangeBtn">Compress Image </button>
             <div class="hidden progressScreen">
-                <p class="textHeading">Please Wait While We Resize Your Image</p>
+                <p class="textHeading">Please Wait While We Compress Your Image</p>
                 <progress></progress>
             </div>
         </section>
     <!--Button-->
 
     <section class="hidden lastSection">
-        <p class="text">Image Resized Successfully</p>
+        <p class="text">Image Compressed Successfully</p>
         <button id="DownloadBtn">Download</button>
 
     </section>
@@ -72,25 +67,15 @@
      
 
     </main>
-   
 
+
+    <footer></footer>
     
-
-
-
-
-
-
-
-
-
-        <footer></footer>
-
 
     <script src="../../sharedFiles/header.js"></script>
     <script src="../../sharedFiles/hero.js"></script>
     <script src="../../sharedFiles/footer.js"></script>
     <script src="../../sharedFiles/global.js"></script>
-    <script src="./ImageScript.js" type="module"></script>
+    <script src="./imageCompressor.js"></script>
 </body>
-</html>>
+</html>

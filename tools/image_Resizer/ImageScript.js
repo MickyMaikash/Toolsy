@@ -37,7 +37,7 @@ imageInput.addEventListener('change',()=>{
     fileType=uploadedImage.type;
     name.innerHTML=`Name: ${uploadedImage.name}`;
     Imgtype.innerHTML=`Type: ${uploadedImage.type}`;
-    Imgsize.innerHTML=`Size: ${uploadedImage.size}`;
+    Imgsize.innerHTML=`Size: ${(uploadedImage.size / 1024).toFixed(2)} kb`;
 
     previewImg.onload=()=>{
         let width=previewImg.naturalWidth;

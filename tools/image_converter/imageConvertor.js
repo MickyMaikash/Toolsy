@@ -49,8 +49,13 @@ imageInput.addEventListener('change',()=>{
         alert("choose a different image it has 0 size")
         return
     }else if(uploadedImage.type.split("/")[1]!=initalFileType){
+        if(initalFileType=="jpeg"){
+        alert( `Choose a different jpg image`)
+        }else{
+                    alert( `Choose a different ${initalFileType} image`)
+        }
         console.log(`${uploadedImage.type} and ${initalFileType}`)
-        alert( `Choose a different ${initalFileType} image`)
+
         return;
     }
     mainLayout.classList.remove('hidden');
