@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="StyleSheet" href="splitPdf.css" >
+    <link rel="StyleSheet" href="../../sharedFiles/global.css">
+</head>
+<body>
+        <header></header>
+    <section data-title="Split Pdf" data-description="Extract selected pages from a PDF into a new PDF document."   class="hero"></section>
+
+<section class="guide" id="guide">
+
+    <button class="closeGuide">
+        ✕
+    </button>
+
+    <h2>How to Split PDF?</h2>
+
+    <ol>
+        <li>Upload your PDF file.</li>
+        <li>Select the pages or enter a page range.</li>
+        <li>Review your selection.</li>
+        <li>Click <strong>Split PDF</strong>.</li>
+        <li>Download the extracted PDF.</li>
+    </ol>
+
+</section>
+
+
+
+    <section class="uploadSection">
+<div>📄 Upload PDF files  or drag and drop them here</div>
+        <input class="hidden" type="file" id="PdfInput"  accept="application/pdf" multiple>
+</section>
+<button id="selectImages" class="hidden selecetImagBtn">Select Images</button>
+
+
+
+
+<section class="hidden splitModal ">
+
+    <div class="splitBox">
+
+        <div class="header">
+            <h2>Select Pages </h2>
+            <button class="closeBtn">✕</button>
+        </div>
+
+        <div class="splitOptions">
+
+            <div class="pagesGrid">
+
+                <!-- Canvas thumbnails go here -->
+
+            </div>
+
+        </div>
+
+        <button id="SplitBTN" class="splitBtn">
+            Split PDF
+        </button>
+        <progress class="hidden splitProgress"></progress>
+
+        <button class="hidden splitBtn" id="downloadBtn" >
+    Download PDF
+</button>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+  
+  
+
+
+<footer></footer>
+
+    <script src="../../sharedFiles/header.js"></script>
+    <script src="../../sharedFiles/hero.js"></script>
+    <script src="../../sharedFiles/footer.js"></script>
+    <script src="../../sharedFiles/global.js"></script>
+    <script type="module">
+    import * as pdfjsLib from "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs";
+
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+        "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.worker.min.mjs";
+
+    window.pdfjsLib = pdfjsLib;
+</script>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="./splitPdf.js"></script>
+</body>
+</html>

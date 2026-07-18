@@ -99,7 +99,6 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
 }
 
 .mainContainer p {
@@ -155,21 +154,15 @@
 #downloadBtn {
     display: block;
     margin: 20px auto;
-
     padding: 12px 28px;
     border: none;
     border-radius: 10px;
-
     background: #2563eb;
     color: white;
-
     font-size: 16px;
     font-weight: 600;
-
     cursor: pointer;
-
     box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-
     transition: all 0.2s ease;
 }
 
