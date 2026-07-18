@@ -364,24 +364,28 @@ nav a{
 @media (max-width: 600px) {
 
     header {
-        padding: 15px;
+        padding: 10px 15px;
         flex-direction: column;
-        gap: 15px;
+        gap: 5px;
     }
 
     header h1 {
         font-size: 1.6rem;
+        margin: 0;
     }
 
     nav {
-        display: flex;
         width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     nav a {
-        margin: 5px 8px;
+        flex: 1;
+        text-align: center;
+        margin: 0;
+        padding: 8px 0;
         font-size: 1rem;
     }
 }
