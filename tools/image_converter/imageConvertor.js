@@ -59,6 +59,8 @@ imageInput.addEventListener('change',()=>{
         return;
     }
     mainLayout.classList.remove('hidden');
+    lastdownSection.classList.add('hidden')
+    ImageExtChangeBtn.classList.remove('hidden')
     if(finalFileTeyp=="jpeg"){
         ImageExtChangeBtn.innerHTML=  `Covert to jpg`
     }else{
@@ -95,7 +97,7 @@ function imageCoverter(){
 
 
      
-    if (finalFileType === "jpg" || finalFileType === "jpeg") {
+    if (finalFileTeyp === "jpg" || finalFileTeyp === "jpeg") {
 
         finalConvertImage = canvas.toDataURL(
             "image/jpeg",

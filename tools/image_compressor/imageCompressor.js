@@ -33,11 +33,6 @@ UploadSection.addEventListener('click',()=>{
 })
 
 changeImgBtn.addEventListener('click',()=>{
-    mainLayout.classList.add('hidden')
-    ImageExtChangeBtn.remove("hidden")
-      progressscren.classList.add('hidden');
-        lastdownSection.classList.add('hidden');
-        beforAfterPreview.classList.add('hidden')
     imageInput.click();
 })
 
@@ -64,7 +59,8 @@ imageInput.addEventListener('change',()=>{
     Imgsize.innerHTML=`Size: ${(UploadedImage.size / 1024).toFixed(2)} kb`;
     UploadSection.classList.add('hidden')
     mainLayout.classList.remove('hidden')
-
+    lastdownSection.classList.add('hidden')
+    ImageExtChangeBtn.classList.remove('hidden')
     previewImg.onload=()=>{
         console.log('image Loaded Successfully')
     }
