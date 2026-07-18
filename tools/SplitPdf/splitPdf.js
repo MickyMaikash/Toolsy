@@ -8,6 +8,8 @@ let splitModal =document.querySelector(".splitModal")
 let pagesGrid=document.querySelector(".pagesGrid")
 let closeBtn=document.querySelector(".closeBtn")
 let selectImages=document.querySelector("#selectImages")
+const loader = document.querySelector("#loader");
+
 
 let pdfFile=null
 let downloadUrl=null
@@ -32,6 +34,9 @@ uploadSection.addEventListener('click',()=>{
 PdfInput.addEventListener('change',async()=>{
     let data=PdfInput.files[0];
     if (!data) return;
+
+     showLoader();
+
     splitButton.classList.remove('hidden')
     const buffer = await data.arrayBuffer();
 
@@ -51,7 +56,11 @@ const pdfJsDoc = await pdfjsLib.getDocument({
         selectedPages: []
     };
 
-    loadPagesInUi()
+    try {
+        await loadPagesInUi();
+    } finally {
+        hideLoader();
+    }
 
 })
 
@@ -168,3 +177,10 @@ const downloadPdf=()=>{
     link.click()
 }
 
+function showLoader() {
+    loader.classList.remove("hidden");
+}
+
+function hideLoader() {
+    loader.classList.add("hidden");
+}
