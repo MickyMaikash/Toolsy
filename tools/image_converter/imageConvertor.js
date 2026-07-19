@@ -48,7 +48,12 @@ imageInput.addEventListener('change',()=>{
     if(uploadedImage.size<=0){
         alert("choose a different image it has 0 size")
         return
-    }else if(uploadedImage.type.split("/")[1]!=initalFileType){
+    }
+    else if (initalFileType=="svg"){
+        initalFileType="svg+xml"
+    }
+    
+    else if(uploadedImage.type.split("/")[1]!=initalFileType){
         if(initalFileType=="jpeg"){
         alert( `Choose a different jpg image`)
         }else{
